@@ -43,7 +43,7 @@ BG-Changer/ │ ├── index.html └── README.md
 
 1.  Clone the repository:
 
-    git clone https://github.com/yourusername/auto-bg-changer.git
+    https://github.com/Pankajranher/BG-changer.git
 
 2.  Open the project folder.
 

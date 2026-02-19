@@ -26,7 +26,9 @@ color-changing effect using buttons.
 
 ## 📂 Project Structure
 
-BG-Changer/ │ ├── index.html └── README.md
+BG-Changer/ │ 
+            ├── index.html 
+            └── README.md
 
 ------------------------------------------------------------------------
 

@@ -33,7 +33,7 @@ BG-Changer/ │ ├── index.html └── README.md
 ## ▶️ How It Works
 
 -   `Math.random()` generates random numbers.
--   The `randomColor()` function creates a random HEX color.
+-   `randomColor()` function creates a random HEX color.
 -   `setInterval()` starts changing the background color.
 -   `clearInterval()` stops the color change.
 
@@ -50,7 +50,7 @@ BG-Changer/ │ ├── index.html └── README.md
 3.  Double click `index.html`\
     OR\
     Open with Live Server in VS Code.
-4. OR the Project is Deployed here : 
+4. OR the Project is Deployed here : https://pankajranher.github.io/BG-changer/
 
 ------------------------------------------------------------------------
 

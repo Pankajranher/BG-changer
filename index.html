@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto BG Changer</title>
+  </head>
+  <style>
+    #start {
+      color: #000;
+    }
+
+    #stop {
+      color: #000;
+    }
+
+    #start:hover {
+      background: red;
+    }
+
+    #stop:hover {
+      background: green;
+    }
+  </style>
+  <body>
+    <div>Click the below buttons to start and stop</div>
+    <div>
+      <button id="start">START</button>
+      <button id="stop">STOP</button>
+    </div>
+
+    <script>
+      const randomColor = function () {
+        const hex = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += hex[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      };
+
+      let intervalId = null;
+
+      const start = document.getElementById("start");
+      const stop = document.getElementById("stop");
+
+      const startChangColor = function () {
+        if (!intervalId) {
+          intervalId = setInterval(changeBgColor, 2000);
+        }
+
+        function changeBgColor() {
+          document.body.style.backgroundColor = randomColor();
+        }
+      };
+
+      const stopChangColor = function () {
+        clearInterval(intervalId);
+        intervalId = null;
+      };
+      start.addEventListener("click", startChangColor);
+      stop.addEventListener("click", stopChangColor);
+    </script>
+  </body>
+</html>
